@@ -3,3 +3,20 @@
 /.fleet/
 /.run/
 /.vscode/
+
+# composer
+composer.lock
+composer.phar
+/vendor/
+
+# phpunit
+.phpunit.cache
+phpunit.xml
+
+# php-cs-fixer
+.php-cs-fixer.cache
+.php-cs-fixer.php
+
+# phpstan
+.phpstan.cache
+.phpstan.neon
