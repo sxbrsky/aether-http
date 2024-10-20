@@ -1,47 +1,33 @@
 {
-    "name": "sxbrsky/http-message",
-    "description": "A strict PSR-7 HTTP message implementation.",
-    "license": "MIT",
-    "type": "library",
-    "keywords": [
-        "psr-7",
-        "request",
-        "response",
-        "message",
-        "http",
-        "http-message"
-    ],
-    "authors": [
-        {
-            "name": "Dominik Szamburski",
-            "email": "dominikszamburski99@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=8.2",
-        "psr/http-message": "^2.0"
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "dev-master",
-        "phpstan/phpstan": "2.0.x-dev",
-        "phpunit/phpunit": "11.4.x-dev"
-    },
-    "provide": {
-        "psr/http-message-implementation": "2.0"
-    },
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Sxbrsky\\HttpMessage\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Sxbrsky\\HttpMessage\\Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
+  "name": "aether/http",
+  "description": "The Aether http package.",
+  "license": "MIT",
+  "type": "library",
+  "support": {
+    "issues": "https://github.com/sxbrsky/aether/issues",
+    "source": "https://github.com/sxbrsky/aether"
+  },
+  "require": {
+    "php": "^8.2",
+    "psr/http-factory": "^1.1",
+    "psr/http-message": "*"
+  },
+  "provide": {
+    "psr/http-factory-implementation": "*",
+    "psr/http-message-implementation": "*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Aether\\Http\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aether\\Tests\\Http\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
 }
